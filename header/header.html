@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <head>
+    <!-- bootstarp css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-------------- 
+      =custom css=
+     ---------------->
+    <link rel="stylesheet" media="all" href="../assets/css/header.css" />
+
+    <!----------- 
+      =script=
+     -------------->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+  </head>
+  <!-- body -->
+  <body>
+    <!-- top -->
+    <div class="col-12 d-flex flex-row-reverse my-auto pagetop">
+      <div>
+        <a class="navbar-brand pagetop" style="color: white" href="#"
+          ><img
+            class="img-thumbnail"
+            src="../assets/img/cartlogo.png"
+            alt=""
+            style="height: 5vh; width: 5vh"
+        /></a>
+      </div>
+      <div>
+        <a
+          class="navbar-brand pagetop"
+          style="color: white"
+          href="../registrationform/sign_in.html"
+          >Signin</a
+        >
+      </div>
+      <div class="nav-item dropdown">
+        <a
+          class="dropdown nav-link dropdown-toggle pagetop"
+          style="color: white"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Registration
+        </a>
+        <div
+          class="dropdown-menu dropdown-content"
+          style="z-index: 1040"
+          aria-labelledby="navbarDropdown"
+        >
+          <a
+            class="dropdown-item menubtn p-3"
+            href="../registrationform/Customer.php"
+            >Customer Registration</a
+          >
+          <a
+            class="dropdown-item menubtn p-3"
+            href="../registrationform/Vendor.php"
+            >Vendor Registration</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- brandlogo div -->
+    <div class="row" style="max-width: 100vw; background: #ffffff">
+      <a class="navbar-brand col-2" style="color: black" href="#"
+        ><img
+          class="p-2"
+          style="height: 6vw; width: 15vw"
+          src="../assets/img/blogo.jpg"
+          alt=""
+        />
+      </a>
+      <div class="col row p-3">
+        <div class="container col-sm input-group">
+          <div class="row">
+            <input
+              id="input"
+              style="border: 2px inset #766491; height: 5vh; width: 50vw"
+              type="text"
+              class="form-control col-sm mt-2"
+              placeholder="Search"
+              aria-label="Text input with dropdown button"
+            />
+
+            <div
+              class="input-group-append col-sm p-2"
+              style="height: fit-content; z-index: 1040"
+            >
+              <select
+                id="dropdown"
+                class="dropdown"
+                style="border: 2px inset #766491"
+              >
+                <option selected>All Categories</option>
+                <option value="1">Automobiles</option>
+                <option value="2">Women fashion</option>
+                <option value="3">Men fashion</option>
+                <option value="3">Electronics</option>
+                <option value="3">Skin care Products</option>
+                <option value="3">Toiletries</option>
+                <option value="3">Phones & Accessories</option>
+                <option value="3">Web Devlopment</option>
+                <option value="3">Graphics design</option>
+                <option value="3">Home & Kitchen</option>
+              </select>
+
+              <div class="input-group-append">
+                <button
+                  class="btn p-2"
+                  style="
+                    background: #563d7c;
+                    color: white;
+                    border: 2px inset #563d7c;
+                    height: 5vh;
+                  "
+                  type="button"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg p-2 sticky-top"
+      style="background-color: #e7e7e7; max-width: 100vw"
+    >
+      <a class="navbar-brand" href="#"></a>
+      <button
+        class="navbar-toggler custom-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar mb-1"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="dropdown nav-link dropdown-toggle menubtn"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <strong>All Categories</strong>
+            </a>
+            <div
+              class="dropdown-menu dropdown-content"
+              aria-labelledby="navbarDropdown"
+            >
+              <a class="dropdown-item menubtn" href="#">Automobiles</a>
+              <a class="dropdown-item menubtn" href="#">Women fashion</a>
+              <a class="dropdown-item menubtn" href="#">Men fashion</a>
+              <a class="dropdown-item menubtn" href="#">Electronics</a>
+              <a class="dropdown-item menubtn" href="#">Skin care Products</a>
+              <a class="dropdown-item menubtn" href="#">Toiletries</a>
+              <a class="dropdown-item menubtn" href="#">Phones & Accessories</a>
+              <a class="dropdown-item menubtn" href="#">Devlopment</a>
+              <a class="dropdown-item menubtn" href="#">Graphics design</a>
+              <a class="dropdown-item menubtn" href="#">Home & Kitchen</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menubtn" href="#"
+              ><strong>All Sub Categories</strong></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menubtn" href="#"><strong> Product</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menubtn" href="#"><strong> Deal</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menubtn" href="#"
+              ><strong>Bundled Product</strong></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menubtn" href="#"
+              ><strong>Classifieds</strong></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menubtn" href="#"><strong>All Brands</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menubtn" href="#"
+              ><strong>All Vendors</strong></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menubtn" href="#"><strong>Blogs</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menubtn" href="#"
+              ><strong>Store Locator</strong></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menubtn" href="#"><strong>Contact</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menubtn" href="#"><strong>More</strong></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>

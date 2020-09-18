@@ -1,0 +1,4 @@
+.cardlayer:hover {
+  transition-timing-function: ease-in;
+  box-shadow: 9px 7px 6px 0px rgba(0, 0, 0, 0.75);
+}
